@@ -7,21 +7,4 @@
 
   <display-name>Sample Application</display-name>
 
-  <!-- Servlet mapping -->
-  <servlet>
-    <servlet-name>Sample</servlet-name>
-    <servlet-class>br.ufscar.servlet.Sample</servlet-class>
-  </servlet>
-
-  <!-- JSP Mapping, necessary only if JSP is inside WEB-INF -->
-  <servlet>
-    <servlet-name>SampleJsp</servlet-name>
-    <jsp-file>/WEB-INF/pages/sampleLogic.jsp</jsp-file>
-  </servlet>
-
-  <!-- Application routes -->
-  <servlet-mapping>
-    <servlet-name>Sample</servlet-name>
-    <url-pattern>/sample</url-pattern>
-  </servlet-mapping>
 </web-app>

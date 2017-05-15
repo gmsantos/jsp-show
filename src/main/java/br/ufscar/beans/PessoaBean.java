@@ -58,7 +58,7 @@ public class PessoaBean
 
         try {
             DriverManager.registerDriver(new com.mysql.jdbc.Driver()); 
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb", "root", "root");
+            conn = DriverManager.getConnection("jdbc:mysql://mysql/mydb", "root", "root");
         } catch(SQLException e) {
             throw new RuntimeException(e);            
         }

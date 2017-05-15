@@ -7,7 +7,7 @@
         <title>Erro</title>
     </head>
     <body>
-        <h1><%=request.getParameter("mensagem")%></h1>
+        <h1>${not empty mensagem ? mensagem : "Algo de muito errado ocorreu." }</h1>
         <a href="index.jsp">Voltar</a>
         <!-- Este comentário é necessário porque o Internet Explorer apresenta uma restrição de tamanho mínimo
           para as páginas retornadas para o navegador.

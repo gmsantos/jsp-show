@@ -8,14 +8,27 @@
    String endereco = request.getParameter("endereco");
    String telefone = request.getParameter("telefone");
    //O campo idade já será tratado pela diretiva page, que especifica erro.jsp como a página de erro
-   if(nome.equals("") || email.equals("") || endereco.equals("") || telefone.equals("")) {]
+   if(nome.equals("") || email.equals("") || endereco.equals("") || telefone.equals("")) {
 %>
-<jsp:forward page="erro.jsp" />
+<jsp:forward page="erro.jsp">
+    <jsp:param name="mensagem" value="É necessário que você informe seu nome!" />
+</jsp:forward>
 <%
    } 
    else
    {
-     //Realizar o cadastro aqui. Utilizar JavaBeans
+%>
+<jsp:useBean id="pessoa" class="br.ufscar.beans.PessoaBean"/> 
+<jsp:setProperty name="pessoa" property="*" />
+        <%
+        if (!pessoa.save()) 
+        {
+        %>
+            <jsp:forward page="erro.jsp">
+                <jsp:param name="mensagem" value="Falha ao salvar dados no banco!" />
+            </jsp:forward>
+        <%
+        }
    }
 %>
 <html>

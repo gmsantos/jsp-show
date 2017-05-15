@@ -7,7 +7,7 @@
         <title>JSP Page</title>
     </head>
     <body style="margin:0">
-        <font face="Verdana" style="font-size:22px;font-weight:bold;text-align:center">AA5-1-1</font><br /><br />
-        <font face="Verdana" style="font-size:12px;font-weight:bold;text-align:center">Nome do aluno:</font>
+        <font face="Verdana" style="font-size:22px;font-weight:bold;text-align:center">AA6-1-1</font><br /><br />
+        <font face="Verdana" style="font-size:12px;font-weight:bold;text-align:center">Nome do aluno: Daniel, Felipe, Gabriel, Wesley</font>
     </body>
 </html>

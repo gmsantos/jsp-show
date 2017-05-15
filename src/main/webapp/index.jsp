@@ -8,7 +8,7 @@
     </head>
     <body style="margin-top:0;margin-left:0">
       <div style="text-align:center;background:rgb(142,174,235);position:absolute;height:10%;width:100%">
-        <%@include file="cabecalho.jsp"%>
+        <jsp:include page="cabecalho.jsp" />
       </div>
       <div style="position:absolute;top:10%;height:80%;width:100%">
         <h1>Cadastro de Usuários</h1>
@@ -27,7 +27,7 @@
         </form>
       </div>
       <div style="text-align:center;background:rgb(142,174,235);position:absolute;height:10%;bottom:0px;width:100%">
-          <%@include file="rodape.jsp"%>
+          <jsp:include page="rodape.jsp" />
       </div>
     </body>
 </html>

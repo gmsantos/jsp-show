@@ -8,8 +8,11 @@
    String endereco = request.getParameter("endereco");
    String telefone = request.getParameter("telefone");
    //O campo idade já será tratado pela diretiva page, que especifica erro.jsp como a página de erro
-   if(nome.equals("") || email.equals("") || endereco.equals("") || telefone.equals(""))
-     response.sendRedirect("erro.jsp");
+   if(nome.equals("") || email.equals("") || endereco.equals("") || telefone.equals("")) {]
+%>
+<jsp:forward page="erro.jsp" />
+<%
+   } 
    else
    {
      //Realizar o cadastro aqui. Utilizar JavaBeans
